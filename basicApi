@@ -1,0 +1,37 @@
+const http=require('http');
+const data=require('data');
+http.createServer((req,res)=>{
+    res.write("Hello world");
+    res.write(JSON.stringify(data));
+    res.end();
+}).listen(3000);
+
+
+
+
+const http=require('http');
+const data=require('data');
+http.createServer((req,res)=>{
+    res.write("hello world");
+    res.write(JSON.stringify(data));
+    res.end();
+}).listen(3000);
+
+
+const http=require('http');
+const data=require('data');
+http.createServer((req,res)=>{
+    res.write(JSON.stringify(data));
+    res.write("Hello WORLD");
+    res.end();
+}).listen(3000);
+
+
+
+const http=require('http');
+const data=require('data');
+http.createServer((req,res)=>{
+    res.write("hello world");
+    res.write(JSON.stringify(data));
+    res.end();
+}).listen(3000);

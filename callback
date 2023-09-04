@@ -1,0 +1,77 @@
+function add(a,b,callback){
+    setTimeout(()=>{
+        const sum=a+b;
+        callback(sum);
+    },1000)
+}
+function display(result){
+    console.log("result:",result);
+}
+
+add(5,10,display);
+
+
+A callback function is a function which is passed to another function as an argument.
+
+
+function add(a,b,callback){
+    setTimeout(()=>{
+        const sum=a+b;
+        callback(sum);
+    },1000)
+}
+
+function display(result){
+    console.log("Result:",result);
+}
+
+add(2,3,display);
+
+
+
+
+
+
+function add(a,b,callback){
+    setTimeout(()=>{
+        const sum=a+b;
+        callback(sum);
+    },1000)
+}
+
+function display(res){
+    console.log("result:",res);
+}
+add(2,5,display);
+
+
+//callback : used to handle the result of asynchronous operations , ensuring that the code doesn't block 
+//while waiting for a task to complete.
+
+function add(a,b,callback){
+    const sum=a+b;
+    callback(sum);
+}
+function display(res){
+    console.log(res);
+}
+add(2,5,display);
+
+
+
+
+
+
+
+function add(a,b,callback){
+    setTimeout(()=>{
+        const sum=a+b;
+        callback(sum)
+    })
+}
+
+function display(res){
+    console.log(res);
+}
+
+add(2,5,display);

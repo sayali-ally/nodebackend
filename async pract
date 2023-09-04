@@ -1,0 +1,21 @@
+function Age(age){
+    return new Promise((res,rej)=>{
+        if(age>=18){
+            console.log("Access prov");
+        }
+        else{
+            console.log("Access denied");
+        }
+    })
+}
+
+async function foo(){
+    try{
+        let res= await Age(21);
+        console.log(res)
+    }
+    catch(error){
+
+    }
+}
+foo();

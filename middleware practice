@@ -1,0 +1,87 @@
+const express=require('express');
+
+
+const AgeFilter((req,res,next)=>{
+    if(!req.query.age)
+    res.send("please provide age");
+    else if(req.query.age<18)
+    res.send("access denied");
+
+    next();
+})
+
+app.use(AgeFilter);
+
+app.get('/about',(req,res)=>{
+    res.send("Welcome to home page");
+})
+
+app.listen(3000);
+
+
+
+
+basic middleware example with ages 
+
+const express=require('express');
+const app=express();
+const AgeFilter((req,res,next)=>{
+    if(!req.query.age)
+    res.send("please provide age");
+    else if(req.query.age<18)
+    res.send("access denied");
+
+    next();
+})
+app.use(AgeFilter);
+app.get('/about',(req,res)=>{
+    res.send("welcome to about page");
+})
+
+app.listen(3000);
+
+
+const express=require('express');
+const app=express();
+
+const AgeFilter((res,res,next)=>{
+    if(!req.query.age){
+        res.send("please provide age");
+    }
+    else if(res.query.age>18){
+        res.send("access provided");
+    }
+    else{
+        res.send("access denied");
+    }
+    next();
+})
+app.use(AgeFilter);
+app.get('/about',(req,res)=>{
+    res.send("Welcome to about page");
+})
+
+app.listen(3000);
+
+
+
+const express=require('express');
+cosnt app=express();
+const AgeFilter((req,res,next)=>{
+    if(!req.query.age){
+        res.send("Please provide age");
+    }
+    else if(req,query.age<18){
+        res.send("access denied");
+    }
+    else {
+        res.send("access provided");
+    }
+    next();
+})
+app.use(AgeFilter);
+app.get('/about',(req,res)=>{
+    res.send("Welcome to the about page");
+})
+
+app.listen(3000);

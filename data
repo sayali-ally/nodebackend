@@ -1,0 +1,6 @@
+module.exports=data;
+data=[
+    {name:"sayali", id:1},
+    {},
+    {}
+]
